@@ -26,20 +26,49 @@ Criar uma função de salvar, que percorra a lista cadastrosParaEnviarParaOBanco
 
 
 
+
 class pessoa:
-    def __init__ (self,nome,sobrenome,idade,altura,TemHabilitacao) :
+    def __init__(self,nome,sobrenome,idade,altura,temHabilitacao):
         self.nome = nome
         self.sobrenome = sobrenome
         self.idade = idade
-        self.altura =altura
-        self.TemHabilitacao=TemHabilitacao
+        self.altura = altura
+        self.temHabilitacao = temHabilitacao
+
+funcionariosParaCadastrar = [ 
+
+    {"nome": "Pablo", "sobrenome": "Araujo", "idade": 34, "altura": 1.71, "temHabilitacao": True},
+    {"nome": "Ana", "sobrenome": "Silva", "idade": 28, "altura": 1.65, "temHabilitacao": False},
+    {"nome": "Carlos", "sobrenome": "Souza", "idade": 40, "altura": 1.80, "temHabilitacao": True}
+
+]
+ex=pessoa (funcionariosParaCadastrar[0]["nome"])
+print (ex)
 
 
-funcionario1=pessoa('Pablo', "Araujo",'34', '1.71',  True , ),
-print ('nome ', funcionario1.nome)
+def cadastro (funcionariosParaCadastrar,pessoa):
+    
+    for i in range (len(funcionariosParaCadastrar)):
+
+        funcionario= pessoa ('','','','','')
 
 
-funcionario2=pessoa( "Ana",  "Silva", '28', '1.65', False),
-funcionario3=pessoa( "Carlos","Souza", '40', '1.80', True)
+
+    print (cadastrosParaEnviarParaOBanco ,sep=" \n ", end="\n", )
+
+cadastro(funcionariosParaCadastrar,pessoa)
+cadastrosParaEnviarParaOBanco = []
+"""
+def salvar(cadastrosParaEnviarParaOBanco):
 
 
+    print (f'O usuário {funcionario1.nome} {funcionario1.sobrenome} foi salvo com sucesso.\nO usuário {funcionario2.nome} {funcionario2.sobrenome} foi salvo com sucesso.\nO usuário {funcionario3.nome} {funcionario3.sobrenome} foi salvo com sucesso.')
+
+salvar(cadastrosParaEnviarParaOBanco)
+
+
+
+
+
+
+"""
